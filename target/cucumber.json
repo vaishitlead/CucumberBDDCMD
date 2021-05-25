@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-25T17:01:46.028Z",
+        "line": 3,
+        "name": "Check login with valid credentials",
+        "description": "",
+        "id": "demo-functionality-test;check-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.ArithmeticException: / by zero\r\n\tat Steps.login.user_calculate(login.java:14)\r\n\tat ✽.user calculate 1/0(file:///C:/Users/V/workspace/CucumberBDDCMD/src/test/resources/Feature/demo.feature:4)\r\n",
+              "duration": 15000000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "user calculate 1/0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "0",
+                  "offset": 17
+                }
+              ],
+              "location": "Steps.login.user_calculate(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "Steps.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "Steps.login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T17:01:46.207Z",
+        "line": 9,
+        "name": "Check login with invalid credentials",
+        "description": "",
+        "id": "demo-functionality-test;check-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters invalid username and password",
+            "match": {
+              "location": "Steps.login.user_enters_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "error message is displayed -invalid credentials",
+            "match": {
+              "location": "Steps.login.error_message_is_displayed_invalid_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "demo functionality test",
+    "description": "",
+    "id": "demo-functionality-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/demo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-25T17:01:46.214Z",
+        "line": 3,
+        "name": "Check login with valid credentials",
+        "description": "",
+        "id": "login-functionality-test;check-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "Steps.login.user_enters_valid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "Steps.login.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T17:01:46.228Z",
+        "line": 10,
+        "name": "Check login with invalid credentials",
+        "description": "",
+        "id": "login-functionality-test;check-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on login page",
+            "match": {
+              "location": "Steps.login.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user enters invalid username and password",
+            "match": {
+              "location": "Steps.login.user_enters_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.login.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "error message is displayed -invalid credentials",
+            "match": {
+              "location": "Steps.login.error_message_is_displayed_invalid_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "login functionality test",
+    "description": "",
+    "id": "login-functionality-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/login.feature",
+    "tags": []
+  }
+]
